@@ -1407,6 +1407,7 @@ chmod 777 $PREFIX/bin/oneshot.py $PREFIX/bin/vulnwsc.txt $PREFIX/bin/wps
 pkg update
 pkg upgrade -y
 pkg install -y root-repo
-pkg install -y python tsu iw pixiewps wpa-supplicant play-audio
+pkg install -y python tsu iw pixiewps wpa-supplicant play-audio termux-api
 curl -o $PREFIX/bin/sonar.mp3 https://github.com/hamzadjouamaia/termux/raw/refs/heads/main/sonar.mp3 && chmod 777 $PREFIX/bin/sonar.mp3
+termux-wake-lock
 echo -e "\033[32mWPS Installed run it with command wps\033[0m"
